@@ -38,8 +38,3 @@ title: Student Blog
 | 0 | 0|
 | 0 | 0|
 
-
-
-Spotify Playlist
-
-[Click Me!](http://www.google.com){: .btn}
