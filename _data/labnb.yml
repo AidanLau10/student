@@ -1,0 +1,12 @@
+# test course meta data
+Unit1:
+  title: Creating a Lab Notebook
+  description: Implementing Lab Notebook into Website.
+  start: 0
+  end: 3
+Unit2:
+  title: Introduction to Web Development
+  description: Websites are made up of several key parts. Frontend, Backend, Data and Deployment.  The focus for these weeks is to enable students to perform the aspects of constructing and deploying a simple Website. There will be several lectures during this period to provide you with concepts on how to build a WebSite, including working with data from a backend server.
+  start: 4
+  end: 7
+
