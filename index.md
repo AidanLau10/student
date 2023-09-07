@@ -14,14 +14,6 @@ title: Student Blog
 4. English
 5. Ap Biology
 
-### Practicing *italicizing* text
-> Block quotes and *italicizing* text
-
-### Practicing **bold** text
-
-- I used this [website](https://www.markdownguide.org/basic-syntax/#links) to help me implement links in markdown.
-- This is the same [link](https://www.markdownguide.org/basic-syntax/#links){:target="_blank"} but will send you to another tab.
-
 ### Here is my freeform picture!
 
 ![Freeform Picture](/images/freeform.jpg)
@@ -31,10 +23,8 @@ title: Student Blog
 - There is also a swimming pool because I like swimming as a hobby and exercise, although I'm not very good at it.
 - The pair of headphones show my love for music. Music helps me get through tough times and helps me relax.
 
-> **_NOTE:_**  This is a note.
+### This is my favorite video game!
 
-| Table | Table |
-| 0 | 0|
-| 0 | 0|
-| 0 | 0|
+![Valorant Logo](/images/valorant.jpg)
 
+- Valorant is just like CS-GO in the sense that you play 5v5 and try to kill the enemy team before they kill you. I managed to get the highest rank in the game and hit top #170 in North America.
