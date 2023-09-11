@@ -1,7 +1,10 @@
 import randfacts as rf
 
 print("Random Facts")
+x =''
 
-fact = rf.get_fact()
-print(fact)
-    
+while x =='':
+    print("Press Enter for a Fact")
+    x = input()
+    fact = rf.get_fact()
+    print(fact)
