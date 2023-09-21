@@ -5,7 +5,7 @@ Unit1:
   start: 0
   end: 3
 Unit2:
-  title: Introduction to Web Development
+  title: Pair and Team Collaboration
   description: Websites are made up of several key parts. Frontend, Backend, Data and Deployment.  The focus for these weeks is to enable students to perform the aspects of constructing and deploying a simple Website. There will be several lectures during this period to provide you with concepts on how to build a WebSite, including working with data from a backend server.
   start: 4
   end: 7
