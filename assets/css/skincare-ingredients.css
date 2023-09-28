@@ -1,0 +1,14 @@
+.ingredient-button {
+  background-color: #CCA300;
+  color: #fff; 
+  padding: 5px 10px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-family: sans-serif;
+}
+
+.ingredient-button:hover {
+  background-color: #A38200; 
+}
