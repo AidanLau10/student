@@ -1,6 +1,6 @@
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
-const link = document.querySelector('a');
+
 
 try {
 toggle.addEventListener('click', function() {
