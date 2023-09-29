@@ -7,6 +7,7 @@ var aidan = {
   travel:["Japan", "Korea", "Hong Kong", "Taiwan"],
   skincareProducts: 10,
   budget: 94.76,
+  male: true,
 };
 
 // print object
@@ -32,3 +33,4 @@ console.log(`I will have ${aidan.skincareProducts} skincare products are buying 
 console.log(`The datatype of the classes array is an ${typeof aidan.classes}`);
 console.log(`The datatype of skincareProducts is a ${typeof aidan.skincareProducts}`);
 console.log(`The datatype of budget is a ${typeof aidan.budget}`);
+console.log(`The datatype of male is $(typeof aidan.male`);
