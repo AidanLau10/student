@@ -1,10 +1,9 @@
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
-
+let skincareDay = document.getElementById('skincare-day');
 
 try {
 toggle.addEventListener('click', function() {
-  var skincareDay = document.getElementById('skincare-day');
   this.classList.toggle('bi-moon');
   if(this.classList.toggle('bi-brightness-high-fill')) {
     body.style.background = 'white';
@@ -17,9 +16,9 @@ toggle.addEventListener('click', function() {
     body.style.transition = '1s';
     skincareDay.src= '/student/images/skincare-night.jpg';
   }
+  console.log(document.getElementById('day-routine').innerHTML)
   change_text(document.getElementById('day-routine').innerHTML);
   saveData();
-  showMode();
 
   //change_text('Day Routine');
 })
@@ -29,8 +28,9 @@ toggle.addEventListener('click', function() {
 
 function change_text(dayNight) {
   //var dayNight = document.getElementById('day-routine').innerHTML;
+  console.log(dayNight)
   // if day routine says specific text, change to other routine
-  if(dayNight == "Day Routine") {
+  if(dayNight == "Day Routine") { 
     document.getElementById('day-routine').innerHTML = "Night Routine";
   } else {
     document.getElementById('day-routine').innerHTML = "Day Routine";
@@ -39,19 +39,29 @@ function change_text(dayNight) {
 
 // function to save data for color 
 function saveData() {
-  localStorage.setItem("color-mode", body.style.background);
+  localStorage.setItem("routine-text", document.getElementById('day-routine').innerHTML);
 }
 
 // get list data from HTML
 function showMode() {
-  var colorMode = (localStorage.getItem("color-mode"));
-
+  let dayNight = (localStorage.getItem("routine-text"));
+  console.log(dayNight)
     // if day routine says specific text, change to other routine
-    if(colorMode == "black") {
-      document.getElementById('day-routine').innerHTML = "Night Routine";
-    } else {
-      document.getElementById('day-routine').innerHTML = "Day Routine";
-    }
+    document.getElementById('day-routine').innerHTML = dayNight;
+   if(dayNight == "Day Routine") {
+    body.style.background = 'white';
+    body.style.color = 'black';
+    body.style.transition = '1s';
+    skincareDay.src= '/student/images/skincare-day.jpg';
+  } else {
+    body.style.background = 'black';
+    body.style.color = 'white';
+    body.style.transition = '1s';
+    skincareDay.src= '/student/images/skincare-night.jpg';
+  }
 }
-showMode();
+
+window.setTimeout(
+  showMode
+  , 100);
 
